@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="images\favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Listudy</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\login_register.css">
+    <link rel="stylesheet" href="css\reponsive.css">
+    <link rel="stylesheet" href="css\content.css">
+
+
+</head>
+<body>
+    <div class="blackscreen ef-in-03 dp-none" style="  background-color: rgba(0, 0, 0, 0.83) !important;width: 100%;height: 100%;position: fixed;z-index: 3;"></div>
+    <header id="header" class="dp-flex-row">
+        <div id="logo" class="dp-flex-row center-child-row">
+            <svg xmlns="http://www.w3.org/2000/svg" class="threesoc"  viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            <img src="images\image_logo.png" alt="logo">
+            <h1 class="color-nl text-logo fs-25 linear-text">LISTUDY</h1>
+        </div>
+        
+        <div class="nav-mobile">
+            <div id="logo-mb" class="dp-flex-row center-child-row">
+                <img src="static/logo.jpg" alt="logo">
+                <h1 class="color-nl text-logo fs-25 linear-text">LISTUDY</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" class="close" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            </div>
+            <div class="nav-box fs-14">
+                <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb "><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#intro" >HOME</a></h3>
+                <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb"><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#courses">COURSES</a></h3>
+                <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb"><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#aboutus">ABOUT US</a></h3>
+                <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb"><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#contact">CONTACT</a></h3>
+
+            </div>
+            <div class="getstarted-mb fs-14">
+                <button class=" button color-btn-login mg-l-r-5 linear-text btn-L-R-js" value="func-login-mb">Login</button>
+                <button class="btn-register button color-btn-register mg-l-r-5 btn-L-R-js" value="func-register-mb">Register</button>
+            </div>
+        </div>
+        <div class="container dp-flex-row line-h-header fs-14">
+            <nav class="center-child-row nav">
+                <h3 class=""><a class="color-gray pd-l-r-16  fix-a-nav" href="#intro" >HOME</a></h3>
+                <h3 class=""><a class="color-gray pd-l-r-16 hover-color-blue fix-a-nav" href="#courses">COURSES</a></h3>
+                <h3 class=""><a class="color-gray pd-l-r-16 hover-color-blue fix-a-nav" href="#aboutus">ABOUT US</a></h3>
+                <h3 class=""><a class="color-gray pd-l-r-16 hover-color-blue fix-a-nav" href="#contact">CONTACT</a></h3>
+            </nav>
+    
+            
+            <div class="getstarted fs-14">
+                <button  class=" login linear-text btn-L-R-js" value="func-login-pc" >Login</button>
+                <button class="btn-register button color-btn-register mg-l-r-5 btn-L-R-js" value="func-register-pc" >Register</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="container_login_register border-radius"style='display: none;'>
+            <div class="loginModal dp-flex-col pd-l-r-16" >
+                <h2>Welcome back</h2>
+                <svg class="close-btn ef-opacity-hover btn-cl-ctn-login-register-js" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                <label class="text-sty" for="loginUsername">EMAIL</label>
+                <input class="input-sty border-radius" type="email" placeholder="name@email.com" id="loginUsername" onkeypress="handleKeyPress(event, 'loginPassword')">
+                <label class="text-sty" for="loginPassword">PASSWORD</label>
+                <div class="dp-flex-row ctn-handle-func-show-hide-pw">
+                    <input class="input-sty border-radius pw-js" type="password" placeholder="Enter your password" id="loginPassword" >
+                    <svg class="showPassword dp-none"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc-->
+                        <path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
+                    </svg>
+                    <svg class="hidePassword"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc-->
+                        <path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z"/>
+                    </svg>
+                </div>
+                <a href="for" class="forgot-password">Forgot password?</a><br>
+                <button class="btn-register btn color-btn-register border-radius">Login</button>
+                <div class="ctn-text-or" style="border: 1px solid #e0dede;margin-top: 2rem;">
+                </div>
+                <p class="sub">New to Listudy? <button style="border: none;" class=" login linear-text btn-L-R-js" value="func-register-mb">Register</button></p>
+            </div>
+
+            <div class="registerModal dp-flex-col pd-l-r-16">
+
+                <h2>Register</h2>
+                <label class="text-sty" for="registerFullname">FULL NAME</label>
+                <input class="input-sty border-radius" type="text" placeholder="Enter your full name" id="registerFullname" onkeypress="handleKeyPress(event, 'registerUsername')">
+                <svg class="close-btn ef-opacity-hover btn-cl-ctn-login-register-js" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                <label class="text-sty" for="registerUsername">EMAIL</label>
+                <input class="input-sty border-radius" type="email" placeholder="name@email.com" id="registerUsername" onkeypress="handleKeyPress(event, 'registerPassword')">
+                <label class="text-sty" for="registerPassword">PASSWORD</label>
+                <div class="dp-flex-row ctn-handle-func-show-hide-pw">
+                    <input class="input-sty border-radius pw-js" type="password" placeholder="Enter your password" id="registerPassword" onkeypress="handleKeyPress(event, 'registerComfirmPassword')">
+                        <svg class="showPassword dp-none"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc-->
+                            <path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
+                        </svg>
+                        <svg class="hidePassword"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc-->
+                            <path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z"/>
+                        </svg>
+                </div>
+                <!-- <a href="for" class="forgot-password">Forgot password?</a> -->
+                
+                
+                <label class="text-sty" for="registerComfirmPassword">CONFIRM PASSWORD</label>
+                <div class="dp-flex-row ctn-handle-func-show-hide-pw">
+                    <input class="input-sty border-radius pw-js" type="password" placeholder="Comfirm your password" id="registerComfirmPassword">
+                        <svg class="showPassword dp-none"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc-->
+                            <path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
+                        </svg>
+                        <svg class="hidePassword"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc-->
+                            <path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z"/>
+                        </svg>
+                </div>
+                <button class="btn-register btn color-btn-register border-radius">Register</button>
+
+                <div class="ctn-text-or" style="border: 1px solid #e0dede;margin-top: 2rem;">
+                    
+                  </div>
+                
+                <p class="sub">Already on Coursera? <button style="border: none;" href="#" class=" login linear-text btn-L-R-js" value="func-login-pc" >Login</button></p>
+
+
+            
+
+            </div>
+        </div>
+
+        <section id="intro" class="page intro center-text mg-l-r-70">
+            <div class="container dp-flex-row center-child-row">
+                <div class="text" data-aos="fade-right"data-aos-duration="1000">
+                    <h1 class="text-gaint">Learn without limits</h1>
+                    <p class="text-sub pd-t-b-16">Unlock your career potential with Listudy: thousands of top-tier courses, certificates, and degrees from leading universities and companies.</p>
+                    <div class="btn">
+                        <button class="join btn-register button color-btn-register mg-l-r-5 btn-L-R-js" value="func-register-pc" >Join for Free</button>
+                        <button class="learmore btn-lear-more linear-text" value="func-register-pc" >Learn more</button>
+                    </div>
+                </div>
+
+                <div class="image" data-aos="fade-left"data-aos-duration="1000">
+                    <img   src="images\intro.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <img style="position: absolute; bottom: 0%;" class="wave" src="images\wave.png" alt="" data-aos="fade-right" data-aos-duration="1000">
+            <img  class="wave" src="images\wave2.png" alt="" data-aos="fade-left" data-aos-duration="1000">
+            
+        </section>
+
+        <section id="content" class="page content center-text dp-flex-col">
+            <p class="">Trusted by more than 15,000 companies and millions of students around the world</p>
+            <div class="brand dp-flex-row">
+                <img src="	https://s.udemycdn.com/partner-logos/ou-v1/volkswagen.svg" alt="brand">
+                <img src="https://s.udemycdn.com/partner-logos/ou-v1/samsung.svg" alt="brand" srcset="">
+                <img src="	https://s.udemycdn.com/partner-logos/ou-v1/cisco.svg" alt="brand">
+                <img src="https://s.udemycdn.com/partner-logos/ou-v1/att.svg" alt="brand">
+                <img src="https://s.udemycdn.com/partner-logos/ou-v1/procter_gamble.svg" alt="brand">
+                <img src="https://s.udemycdn.com/partner-logos/ou-v1/hewlett_packard_enterprise.svg" alt="brand">
+                <img src="https://s.udemycdn.com/partner-logos/ou-v1/citi.svg" alt="brand">
+                <img src="https://s.udemycdn.com/partner-logos/ou-v1/ericsson.svg" alt="brand">
+            </div>
+        </section>
+
+        <div  class="txtt" style="margin-top: 50px;
+        text-align: center; color: rgb(74, 74, 74);">
+            <h1 style="display: inline;">Outstanding courses at </h1>
+            <h1 style="display: inline;" class="linear-text">LISTUDY</h1>
+        </div>
+        <section id="courses" class="page courses center-text dp-flex-row">
+            
+            <a style="text-decoration: none; color: black;" href="course-detail" class="container">
+                <div class="course-card zoom-card">
+                    <img class="mg-15" src="images\Marketing-Image.png" alt="">
+                    <div class=" info">
+                        <div class="own dp-flex-row">
+                            <img class="brand"   src="https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png" alt="">
+                            <p style="margin-left: 5px;">Google</p>
+                        </div>
+                        <h4 style="margin: 14px;">Google AI Essentials</h4>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none; color: black;" href="course-detail" class="container ">
+                <div class="course-card zoom-card">
+                    <img class="mg-15" src="images\Marketing-Image.png" alt="">
+                    <div class=" info">
+                        <div class="own dp-flex-row">
+                            <img class="brand"   src="https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png" alt="">
+                            <p style="margin-left: 5px;">Google</p>
+                        </div>
+                        <h4 style="margin: 14px;">Google AI Essentials</h4>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none; color: black;" href="course-detail" class="container ">
+                <div class="course-card zoom-card">
+                    <img class="mg-15" src="images\Marketing-Image.png" alt="">
+                    <div class=" info">
+                        <div class="own dp-flex-row">
+                            <img class="brand"   src="https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png" alt="">
+                            <p style="margin-left: 5px;">Google</p>
+                        </div>
+                        <h4 style="margin: 14px;">Google AI Essentials</h4>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none; color: black;" href="course-detail" class="container ">
+                <div class="course-card zoom-card">
+                    <img class="mg-15" src="images\Marketing-Image.png" alt="">
+                    <div class=" info">
+                        <div class="own dp-flex-row">
+                            <img class="brand"   src="https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png" alt="">
+                            <p style="margin-left: 5px;">Google</p>
+                        </div>
+                        <h4 style="margin: 14px;">Google AI Essentials</h4>
+                    </div>
+                </div>
+            </a>
+
+            
+        </section>
+        <button style="margin-left: 50px;" class="button color-btn-register"><a style="text-decoration: none;color: white;" href="all-courses">View all</a></button>
+        <section id="aboutus" class="about-us-section dp-flex-row center-child-row ">
+            <div class="container mg-l-r-70">
+                <h2 style="font-weight: 100; font-size: 80px;">About Us</h2>
+                <p style="color: rgb(82, 82, 82);">We are Listudy, a platform dedicated to providing high-quality educational resources to help students achieve their learning goals. Our team is passionate about education and technology, working tirelessly to bring you the best courses and learning materials.</p>
+            </div>
+            <img style="scale: 80%;" src="https://bootstrapious.com/i/snippets/sn-about/illus.png" alt="" srcset="">
+        </section>
+        
+        <section id="contact" class="contact-section ">
+            <div class="container mg-l-r-70 dp-flex-row">
+                <div class="getInTouch pd-16 dp-flex-col">
+                    <p style="font-size: 28px;" class="pd-16">Get in touch</p>
+                    <form action="" method="post">
+
+                        <div class="name_and_email dp-flex-row">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <input type="text" placeholder="Subject">
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact pd-16 dp-flex-col">
+                    <p style="font-size: 28px; "class="pd-16">Contact us</p>
+                    <div class="address dp-flex-row pd-t-b-6 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        <p class="fs-14"><span style="font-weight: 600;">Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                    </div>
+                    <div class="phone dp-flex-row pd-t-b-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        <p class="fs-14"><span style="font-weight: 600;">Phone:</span> +84 366820837</p>
+                    </div>
+                    <div class="email dp-flex-row pd-t-b-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+                        <p class="fs-14"><span style="font-weight: 600;">Email:</span>phungthanhdat001@gmail.com</p>
+                    </div>
+                    <div class="website dp-flex-row pd-t-b-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"/></svg>
+
+                        <p class="fs-14"><span style="font-weight: 600;">Website:</span>Listudy.com</p>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    </main>
+
+    <footer class="footer" style="font-family: Arial, Helvetica, sans-serif;">
+        <div class="container mg-l-r-70 fs-14">
+          <div class="footer-content">
+            <div class="footer-column">
+              <h3 class=" text-logo fs-25 linear-text">LISTUDY</h3>
+              <p style="color:rgb(205, 202, 255);">Learning is the path to success for everyone.</p>
+            </div>
+            <div class="footer-column">
+              <h3 class="bd-bt">Khóa Học</h3>
+              <ul>
+                <li><a href="#">Lập Trình</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Thiết Kế</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="bd-bt">Hỗ Trợ</h3>
+              <ul>
+                <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+                <li><a href="#">Điều Khoản</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="bd-bt">Theo Dõi</h3>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p style="color: gray;">&copy; 2024 Listudy. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    <!-- <footer class="dp-flex-row">
+        <div class="container mg-l-r-70 dp-flex-col">
+            <h1 class="color-nl text-logo fs-25 linear-text">LISTUDY</h1>
+            <p>&copy; 2024 Listudy. All rights reserved.</p>
+        </div>
+        <div class="nav" style="font-family: Arial, Helvetica, sans-serif;" >
+            <h6 class="pd-t-b-6"><a style="color: white;" class=" pd-l-r-16  fix-a-nav" href="#intro" >HOME</a></h6>
+            <h6 class="pd-t-b-6"><a style="color: white;" class=" pd-l-r-16 hover-color-blue fix-a-nav" href="#courses">COURSES</a></h6>
+            <h6 class="pd-t-b-6"><a style="color: white;" class=" pd-l-r-16 hover-color-blue fix-a-nav" href="#aboutus">ABOUT US</a></h6>
+            <h6 class="pd-t-b-6"><a style="color: white;" class=" pd-l-r-16 hover-color-blue fix-a-nav" href="#contact">CONTACT</a></h6>
+        </div>
+    </footer> -->
+
+            
+    </main>
+ 
+
+    <script src="https://kit.fontawesome.com/0d2d64e695.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+
+main {
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+#intro {
+    background-color: white;
+    height: 100vh;
+}
+
+#content {
+    background-color: #FFFFFF;
+    padding: 50px;
+
+}
+#content p {
+    font-size: 20px;
+    padding: 20px;
+}
+#content img {
+    margin: 10px;
+}
+#courses {
+    background-image: url("demos.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+#courses .container {
+    margin: 10px;
+}
+#courses .course-card {
+    border-radius: 11px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border: 2px solid #E5E7E8
+}
+#courses img {
+    border-radius: 7px;
+
+}
+#courses .own {
+    color: gray;
+    margin-left: 14px;
+    align-items: center;
+    font-size: 14px;
+}
+#courses .own .brand {
+    border: 2px solid #E5E7E8;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+}
+
+.zoom-card {
+    transition: all .3s ease-in-out;
+
+}
+.zoom-card:hover {
+    scale: 105%;
+    box-shadow: 0px 0px 9px 0px #0000002b;
+    cursor: pointer;
+}
+
+
+
+
+#aboutus {
+    background-color: #DBEEF6;
+}
+
+#contact {
+    background-color: #271066;
+    color: white;
+}
+#footer {
+    background-color: #F5F5F5;
+    height: 100px;
+}
+
+/* ___________________________________ */
+
+
+#intro .container .text {
+    width: 45%;
+    z-index: 1;
+}
+#intro .container .image {
+    width: 55%;
+}
+
+#intro .text-gaint {
+    font-size: 84px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(44, 44, 44);
+}
+#intro .text-sub {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+#intro .btn {
+    font-size: 20px;
+} 
+#intro .join {
+    padding: 18px 40px 18px 40px;
+    margin: 0;
+    font-size: 20px;
+    background-color: #0056D2 !important;
+    background: none;
+}
+#intro .learmore {
+    padding: 16px 38px 16px 38px ;
+    font-size: 20px;
+    margin: 0;
+    border: 3px solid #0056D2;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#intro  img {
+    max-width: 100%;
+    height: auto;
+}
+
+#intro .wave {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+.about-us-section, .contact-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.about-us-section h2, .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us-section p {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact {
+    background-color: #FAFAFA;
+    color: #262626;
+
+}
+#contact .getInTouch {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px #0000001a;
+}
+#contact .contact {
+    background-color: #1089FF;
+    color: white;
+    scale: 112%;
+}
+
+#contact .contact svg {
+    background-color: #3b9eff;
+    padding: 5px;
+    border-radius: 50%;
+}
+#contact button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+/* 
+.bd-bt {
+    border-bottom: 1px solid #0056b3;
+} */
+
+.footer {
+    background-color: #333;
+    color: rgb(107 98 255);
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-column h3 {
+    text-decoration: underline;
+  }
+.footer-column {
+    width: 25%; /* Điều chỉnh nếu cần */
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li{
+    padding: 5px;
+}
+
+.footer-column a {
+    color: rgb(205, 202, 255);
+    text-decoration: none;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(205, 202, 255);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}

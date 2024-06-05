@@ -1,0 +1,104 @@
+.container_login_register {
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    backdrop-filter: blur(10px);
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    z-index: 3;
+    animation-name: appear;
+    animation-duration: .2s;
+}
+@keyframes appear {
+    from {
+        transform: translate(-70%, -70%);
+        scale: 80%
+    }
+    to {
+        transform: translate(-50%, -50%);
+        scale: 100%
+    }
+  }
+  
+.container_login_register h2 {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 100;
+    font-size: 28px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #5a5959;
+    letter-spacing: 2px;
+}
+.container_login_register .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.container_login_register .text-sty {
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.container_login_register .forgot-password {
+    color: #2A8BDB;
+    font-size: 12px;
+    text-decoration: none;
+}
+.container_login_register .forgot-password:hover {
+}
+
+.container_login_register .btn {
+    padding: 12px 32px 12px 32px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container_login_register .input-sty {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #5a5959;
+    background-color: #E8F0FE;
+}
+    
+.container_login_register .input-sty::placeholder {
+    color: #5a5959;
+}
+.container_login_register .sub {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+}
+.container_login_register .sub a {
+    color: #2A8BDB;
+}
+.container_login_register .input-sty:focus-visible {
+    outline: red 2px;
+}
+.loginModal {
+    
+}
+
+.registerModal {
+
+}
+
+.container_login_register .ctn-handle-func-show-hide-pw svg {
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+    margin: 10px;
+}

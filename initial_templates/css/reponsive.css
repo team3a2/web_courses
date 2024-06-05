@@ -1,0 +1,41 @@
+@media screen and (min-width: 761px) {
+    #header #logo .threesoc {
+        display: none;
+    }
+
+
+    
+}
+@media screen and (max-width: 761px) {
+    #header #logo .threesoc {
+        display: block;
+    }
+    #header .container .nav {
+        display: none;
+    }
+    #logo-mb,
+    #logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #logo-mb img,
+    #logo img {
+        display: none;
+    }
+    #logo-mb h1,
+    #logo h1 {
+        line-height: 60px;
+    }
+    #header .getstarted {
+        display: none;
+    }
+    
+    /* container_login_register */
+
+
+    .container_login_register {
+        width: 90%;
+    }
+
+}
