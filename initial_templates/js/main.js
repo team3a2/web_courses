@@ -123,3 +123,99 @@ hidePasswordSvgList.forEach(function(hidePasswordSvg, index) {
         showPasswordSvgList[index].classList.remove('dp-none');
     });
 });
+
+
+
+
+// BOT
+
+
+const botIcon = document.querySelector('.bot-icon');
+const chatContainer = document.querySelector('.chat-container');
+const chatHistory = document.querySelector('.chat-history');
+const chatInput = document.querySelector('.chat-input input');
+const sendBtn = document.querySelector('.chat-input button');
+const closeBtn = document.querySelector('.chat-container .close-btn');
+
+const data = {
+    "ổn chưa":"rồi ạ",
+    "bao nhiêu lâu thì bán được 1 tỷ gói mè":"trả lời"
+};
+
+botIcon.addEventListener('click', () => {
+    
+    chatContainer.classList.toggle('hidden');
+    setTimeout(()=> {chatContainer.classList.add('move-chat-container')}, 0.000000000005)
+
+});
+closeBtn.addEventListener('click', () => {
+    chatContainer.classList.remove('move-chat-container')
+    setTimeout(()=> {chatContainer.classList.add('hidden');}, 130)
+    
+          
+});
+sendBtn.addEventListener('click', () => {
+    const userInput = chatInput.value.trim();
+    if (userInput) {
+        addend_message_user(`${userInput}`);
+        chatInput.value = '';
+
+        const response = getResponse(userInput);
+        if (response) {
+            setTimeout(() => {
+                typeWriter(response, 40);
+            }, 500);
+        }
+    }
+});
+
+function getResponse(userInput) {
+    for (const question in data) {
+        if (question.toLowerCase() === userInput.toLowerCase()) {
+            return data[question];
+        }
+    }
+    return "Xin lỗi, tôi không hiểu câu hỏi của bạn.";
+}
+
+function addend_message_user(message) {
+    const messageContainer = document.createElement('div');
+    messageContainer.classList.add('message-user', 'dp-flex-row');
+
+    const img = document.createElement('img');
+    img.src = "images/user.png";
+    img.alt = "Biểu tượng bot";
+
+    const p = document.createElement('p');
+    p.textContent = message
+    messageContainer.appendChild(p);
+    messageContainer.appendChild(img);
+    chatHistory.appendChild(messageContainer);
+    chatHistory.scrollTop = chatHistory.scrollHeight;
+}
+
+function typeWriter(text, speed) {
+    const messageContainer = document.createElement('div');
+    messageContainer.classList.add('message-bot', 'dp-flex-row');
+
+    const img = document.createElement('img');
+    img.src = "images/bot.png";
+    img.alt = "Biểu tượng bot";
+
+    const p = document.createElement('p');
+    messageContainer.appendChild(img);
+    messageContainer.appendChild(p);
+    chatHistory.appendChild(messageContainer);
+    chatHistory.scrollTop = chatHistory.scrollHeight;
+
+    let index = 0;
+    let interval = setInterval(() => {
+        if (index < text.length) {
+            p.textContent += text.charAt(index);
+            index++;
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        } else {
+            clearInterval(interval);
+        }
+    }, speed);
+}

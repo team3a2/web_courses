@@ -258,3 +258,125 @@ main {
     text-align: center;
     margin-top: 20px;
 }
+
+
+
+
+
+/* Bot */
+
+
+.container-bot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    
+}
+
+.bot-icon {
+    cursor: pointer;
+}
+
+.bot-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.chat-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.hidden {
+    display: none;
+}
+.chat-container {
+    position: fixed;
+    bottom: -11%;
+    right: -6%;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transform: scale(0.5);
+    transition: all 0.3s ease;
+}
+
+.move-chat-container {
+    transform: scale(1);
+    bottom: 20px;
+    right: 20px;
+}
+
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 18px;
+    background: none;
+    border: none;
+}
+
+.chat-history {
+    height: 300px;
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.message-bot p {
+    padding: 10px ;
+    color: white;
+    background-color: #2AAEEF;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+    width: 66%;
+    word-wrap: break-word;
+}
+.message-user p {
+    padding: 10px;
+    background-color: rgba(213, 213, 215, 0.703);
+    border-radius: 5px;
+    margin: 0 5px;
+    word-wrap: break-word;
+    max-width: 66%; 
+}
+.message-bot {
+    margin: 7px 0 7px 0;
+}
+.message-user {
+    margin: 7px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.chat-input {
+    display: flex;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0  0 5px
+}
+
+.chat-input button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #2AAEEF;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px  5px 0;
+}
