@@ -8,14 +8,16 @@ main {
     background-color: white;
     height: 100vh;
 }
-
+#intro  button{
+    margin: 7px;
+}
 #content {
     background-color: #FFFFFF;
     padding: 50px;
 
 }
 #content p {
-    font-size: 20px;
+    font-size: var(--font-size-20);
     padding: 20px;
 }
 #content img {
@@ -44,7 +46,7 @@ main {
     color: gray;
     margin-left: 14px;
     align-items: center;
-    font-size: 14px;
+    font-size:var(--font-size-14);
 }
 #courses .own .brand {
     border: 2px solid #E5E7E8;
@@ -69,7 +71,9 @@ main {
 #aboutus {
     background-color: #DBEEF6;
 }
-
+#aboutus .container h2 {
+    font-size: var(--font-size-84);
+}
 #contact {
     background-color: #271066;
     color: white;
@@ -91,29 +95,29 @@ main {
 }
 
 #intro .text-gaint {
-    font-size: 84px;
+    font-size: var(--font-size-84);
     letter-spacing: 2px;
     font-weight: 500;
     color: rgb(44, 44, 44);
 }
 #intro .text-sub {
-    font-size: 24px;
+    font-size: var(--font-size-24);
     letter-spacing: 1px;
 }
 
 #intro .btn {
-    font-size: 20px;
+    font-size: var(--font-size-20)
 } 
 #intro .join {
     padding: 18px 40px 18px 40px;
     margin: 0;
-    font-size: 20px;
+    font-size: var(--font-size-20);
     background-color: #0056D2 !important;
     background: none;
 }
 #intro .learmore {
     padding: 16px 38px 16px 38px ;
-    font-size: 20px;
+    font-size: var(--font-size-20);
     margin: 0;
     border: 3px solid #0056D2;
     background-color: white;
@@ -140,13 +144,13 @@ main {
 }
 
 .about-us-section h2, .contact-section h2 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-2-5rem);
     margin-bottom: 20px;
     text-align: center;
 }
 
 .about-us-section p {
-    font-size: 1.2rem;
+    font-size: var(--font-size-1-2rem);
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -196,7 +200,7 @@ main {
 }
 #contact button {
     padding: 10px;
-    font-size: 1rem;
+    font-size: var(--font-size-1rem);
     background-color: #007BFF;
     color: white;
     border: none;
@@ -250,7 +254,7 @@ main {
 
 .social-icons a {
     margin-right: 10px;
-    font-size: 20px;
+    font-size: var(--font-size-20);
     color: rgb(205, 202, 255);
 }
 
@@ -324,7 +328,7 @@ main {
 
 .close-btn {
     cursor: pointer;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     background: none;
     border: none;
 }

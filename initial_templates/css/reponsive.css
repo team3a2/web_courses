@@ -7,6 +7,21 @@
     
 }
 @media screen and (max-width: 761px) {
+    :root {
+        --font-size-12: 8.4px;   /* 12px - 30% */
+        --font-size-14: 9.8px;   /* 14px - 30% */
+        --font-size-15: 10.5px;  /* 15px - 30% */
+        --font-size-1rem: 0.7rem; /* 1rem - 30% */
+        --font-size-1-2rem: 0.84rem; /* 1.2rem - 30% */
+        --font-size-2-5rem: 1.75rem; /* 2.5rem - 30% */
+        --font-size-20: 14px;    /* 20px - 30% */
+        --font-size-24: 16.8px;  /* 24px - 30% */
+        --font-size-25: 17.5px;  /* 25px - 30% */
+        --font-size-28: 19.6px;  /* 28px - 30% */
+        --font-size-50: 35px;    /* 50px - 30% */
+        --font-size-84: 58.8px;  /* 84px - 30% */
+        --mg-0-70-0-70: 0 20px 0 20px
+    }
     #header #logo .threesoc {
         display: block;
     }
@@ -31,11 +46,58 @@
         display: none;
     }
     
-    /* container_login_register */
-
-
     .container_login_register {
         width: 90%;
     }
 
+    #intro .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #intro .container .text {
+        width: 100%!important
+    }
+    #intro .image,
+    #intro .wave {
+        display: none;
+    }
+    #content .brand {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .brand img {
+        max-width: 80px; /* Chiều rộng tối đa cho mỗi brand khi màn hình nhỏ */
+    }
+    #courses {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #aboutus img {
+        display: none !important;
+    }
+    #contact .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact .container .getInTouch,
+    #contact .container .contact {
+        width: 100%;
+    }
+    #contact .container textarea,
+    #contact .container input {
+        width: 94%;
+    }
+    #contact .container .getInTouch {
+        padding: 10px;
+    }
+    #contact .container .contact {
+        scale: 100%
+    }
+    #contact .contact .website,
+    #contact .contact .email,
+    #contact .contact .phone
+    #contact .contact .address {
+        display: flex;
+        flex-direction: row;
+    }
 }

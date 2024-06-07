@@ -1,5 +1,25 @@
 
 
+:root {
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-15: 15px;
+    --font-size-1rem: 1rem;
+    --font-size-1-2rem: 1.2rem;
+    --font-size-2-5rem: 2.5rem;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+    --font-size-25: 25px;
+    --font-size-28: 28px;
+    --font-size-50: 50px;
+    --font-size-84: 84px;
+    --mg-0-70-0-70: 0 70px 0 70px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* Modal container */
 .modal {
     display: none; 
@@ -28,7 +48,7 @@
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: var(--font-size-28);
     font-weight: bold;
 }
 
@@ -98,16 +118,16 @@ svg {
     margin: 15px;
 }
 .mg-l-r-70 {
-    margin: 0 70px 0 70px;
+    margin: var(--mg-0-70-0-70)
 }
 .w-100 {
     width: 100%;
 }
 .fs-25 {
-    font-size: 25px;
+    font-size: var(--font-size-25)
 }
 .fs-50 {
-    font-size: 50px;
+    font-size: var(--font-size-50)
 }
 .center-child-row {
     display: flex;
@@ -196,7 +216,7 @@ button:hover {
     color: #0056D2;
 }
 .fs-14 {
-    font-size: 14px;
+    font-size: var(--font-size-14)
 }
 .fix-a-nav {
     text-decoration: none;
@@ -262,13 +282,13 @@ header.sticky {
     border-bottom: 1px solid #0056D2;
 } 
 .getstarted-mb {
-position: fixed;
-display: flex;
-flex-direction: column;
-bottom: 0;
-width: 100%;
-padding-bottom: 20px; 
-background-color: white; 
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px; 
+    background-color: white; 
 }
 .getstarted-mb .login {
     text-decoration: none;
