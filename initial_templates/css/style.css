@@ -14,6 +14,8 @@
     --font-size-50: 50px;
     --font-size-84: 84px;
     --mg-0-70-0-70: 0 70px 0 70px;
+    --w-33: 33%;
+    --font-size-18:18px
 }
 
 body {
@@ -116,6 +118,9 @@ svg {
 }
 .mg-15 {
     margin: 15px;
+}
+.mg-t-b-15 {
+    margin: 15px 0 15px 0;
 }
 .mg-l-r-70 {
     margin: var(--mg-0-70-0-70)

@@ -20,7 +20,9 @@
         --font-size-28: 19.6px;  /* 28px - 30% */
         --font-size-50: 35px;    /* 50px - 30% */
         --font-size-84: 58.8px;  /* 84px - 30% */
-        --mg-0-70-0-70: 0 20px 0 20px
+        --mg-0-70-0-70: 0 20px 0 20px;
+        --w-33: 91%;
+        --font-size-18: 14px
     }
     #header #logo .threesoc {
         display: block;
@@ -99,5 +101,16 @@
     #contact .contact .address {
         display: flex;
         flex-direction: row;
+    }
+
+    #mvc .container {
+        flex-direction: column;
+    }
+    #mvc .card {
+        width: 100% !important;
+        margin: 15px 0 0 0 !important
+    }
+    #mvc .img-container img {
+        width: 43%;
     }
 }

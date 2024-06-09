@@ -384,3 +384,33 @@ main {
     border: none;
     border-radius: 0 5px  5px 0;
 }
+#mission{
+    background-color: #0F6FC6
+}
+#vision {
+    background-color: #EB0F4D
+}
+#core-values  {
+    background-color: #00AF50
+}
+
+#mvc .container {
+    position: relative;
+
+}
+#mvc .img-container {
+    display: flex;
+    justify-content: center;
+}
+#mvc .img-container img {
+}
+#mvc .card {
+    padding: 40px;
+    width: var(--w-33);
+    align-items: center;
+    margin: 0 15px 0 0 ;
+    border-radius: 5px;
+    font-size:  var(--font-size-18);
+    color: white;
+    place-self: flex-end;
+}
