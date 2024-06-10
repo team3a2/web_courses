@@ -74,6 +74,14 @@
         display: flex;
         flex-wrap: wrap;
     }
+    #courses .container {
+        width :100% !important
+
+    }
+    #courses .container img{
+        width: 91%;
+
+    }
     #aboutus img {
         display: none !important;
     }
@@ -103,14 +111,17 @@
         flex-direction: row;
     }
 
-    #mvc .container {
+    #MVV .container {
         flex-direction: column;
     }
-    #mvc .card {
+    #MVV .card {
         width: 100% !important;
         margin: 15px 0 0 0 !important
     }
-    #mvc .img-container img {
+    #MVV .img-container img {
         width: 43%;
+    }
+    #categories a {
+        width: 97% !important;
     }
 }

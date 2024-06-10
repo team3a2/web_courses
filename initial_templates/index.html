@@ -12,7 +12,45 @@
     <link rel="stylesheet" href="css\content.css">
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        #categories {
 
+}
+
+#categories h1 {
+    font-size: var(--font-size-24);
+    margin: 30px 0 10px 0;
+    font-weight: 100;
+}
+
+#categories ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+#categories a {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    padding: 24px 32px;
+    background-color: #00255D;
+    color: white !important;
+    width: 31%;
+    border-radius: 10px;
+    
+}
+#categories a:hover {
+    background-color: #013c93;
+}
+#categories a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* #categories a:hover {
+    color: #007bff;
+} */
+    </style>
 </head>
 <body>
     <div class="blackscreen ef-in-03 dp-none" style="  background-color: rgba(0, 0, 0, 0.83) !important;width: 100%;height: 100%;position: fixed;z-index: 3;"></div>
@@ -31,7 +69,7 @@
             </div>
             <div class="nav-box fs-14">
                 <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb "><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#intro" >HOME</a></h3>
-                <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb"><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#mvc">MVC</a></h3>
+                <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb"><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#MVV">MVV</a></h3>
                 <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb"><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#courses">COURSES</a></h3>
                 <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb"><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#aboutus">ABOUT US</a></h3>
                 <h3 class="pd-t-b-16 w-100 hover-color-blue-nav-mb"><a  onclick="closeNavMobile()" class=" color-gray pd-l-r-16  fix-a-nav" href="#contact">CONTACT</a></h3>
@@ -45,7 +83,7 @@
         <div class="container dp-flex-row line-h-header fs-14">
             <nav class="center-child-row nav">
                 <h3 class=""><a class="color-gray pd-l-r-16  fix-a-nav" href="#intro" >HOME</a></h3>
-                <h3 class=""><a class="color-gray pd-l-r-16 hover-color-blue fix-a-nav" href="#mvc">MVC</a></h3>
+                <h3 class=""><a class="color-gray pd-l-r-16 hover-color-blue fix-a-nav" href="#MVV">MVV</a></h3>
                 <h3 class=""><a class="color-gray pd-l-r-16 hover-color-blue fix-a-nav" href="#courses">COURSES</a></h3>
                 <h3 class=""><a class="color-gray pd-l-r-16 hover-color-blue fix-a-nav" href="#aboutus">ABOUT US</a></h3>
                 <h3 class=""><a class="color-gray pd-l-r-16 hover-color-blue fix-a-nav" href="#contact">CONTACT</a></h3>
@@ -171,7 +209,7 @@
         </section>
 
 
-        <section id="mvc" class="mg-l-r-70">
+        <section id="MVV" class="mg-l-r-70">
             <h1 data-aos="fade-up"data-aos-duration="700" class="mg-t-b-15" style="display: inline; border-top: 5px solid blue;">MISSION VISION <h1 data-aos="fade-up"data-aos-duration="700" style="display: inline;color: blue;">VALUES</h1></h1>
             <div class="container dp-flex-row mg-t-b-15">
                 
@@ -207,58 +245,81 @@
                 </div>
             </div>
         </section>
-        <div  class="txtt" style="margin-top: 50px;
-        text-align: center; color: rgb(74, 74, 74);" data-aos="fade-up"data-aos-duration="700">
-            <h1 style="display: inline;">Outstanding courses at </h1>
-            <h1 style="display: inline;" class="linear-text">LISTUDY</h1>
+        <div id="categories" class="mg-l-r-70">
+            <h1>Categories</h1>
+            <ul>
+                <label for="#0"><a id="0" href="#">Arts and Humanities</a></label>
+                <label for="1"><a id="1" href="#">Business</a></label>
+                <label for="2"><a id="2" href="#">Computer Science</a></label>
+                <label for="3"><a id="3" href="#">Data Science</a></label>
+                <label for="4"><a id="4" href="#">Information Technology</a></label>
+                <label for="5"><a id="5" href="#">Health</a></label>
+                <label for="6"><a id="6" href="#">Math and Logic</a></label>
+                <label for="7"><a id="7" href="#">Personal Development</a></label>
+                <label for="8"><a id="8" href="#">Physical Science and Engineering</a></label>
+                <label for="9"><a id="9" href="#">Social Sciences</a></label>
+                <label for="10"><a id="10" href="#">Language Learning</a></label>
+            </ul>
         </div>
-        <section id="courses" class="page courses center-text dp-flex-row">
+
+
+        <div  class="txtt mg-l-r-70" style="margin-top: 50px;
+         color: rgb(74, 74, 74);" data-aos="fade-up"data-aos-duration="700">
+            <h1 style="display: inline; font-size: var(--font-size-28) ">Learn a New Skill in</h1>
+            <h1 style="display: inline; font-size: var(--font-size-28) " class="linear-text">2 Hours</h1>
+        </div>
+        <section id="courses" class="page courses center-text dp-flex-row mg-l-r-70">
             
-            <a style="text-decoration: none; color: black;" href="course-detail" class="container" data-aos="zoom-in"data-aos-duration="800">
+            <a style="text-decoration: none; color: black;    width: 27%;" href="course-detail" class="container" data-aos="zoom-in"data-aos-duration="800">
+                
                 <div class="course-card zoom-card">
-                    <img class="mg-15" src="images\Marketing-Image.png" alt="">
+                    <p class="text-free">Free</p>
+                    <img class="mg-15 "  src="images\courses\course_1-1.png" alt="">
                     <div class=" info">
                         <div class="own dp-flex-row">
-                            <img class="brand"   src="https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png" alt="">
-                            <p style="margin-left: 5px;">Google</p>
+                            <img class="brand"   src="images\courses\supplier_1.png" alt="">
+                            <p style="margin-left: 5px;">Coursera Project Network</p>
                         </div>
-                        <h4 style="margin: 14px;">Google AI Essentials</h4>
+                        <h4 style="margin: 14px;"> Use Canva to Create Desktop and Mobile-friendly Web Pages</h4>
                     </div>
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="course-detail" class="container " data-aos="zoom-in"data-aos-duration="800">
+            <a style="text-decoration: none; color: black;    width: 27%;" href="course-detail" class="container" data-aos="zoom-in"data-aos-duration="800">
                 <div class="course-card zoom-card">
-                    <img class="mg-15" src="images\Marketing-Image.png" alt="">
+                     <p class="text-free">Free</p>
+                    <img class="mg-15 "  src="images\courses\course_1-2.png" alt="">
                     <div class=" info">
                         <div class="own dp-flex-row">
-                            <img class="brand"   src="https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png" alt="">
-                            <p style="margin-left: 5px;">Google</p>
+                            <img class="brand"   src="images\courses\supplier_1.png" alt="">
+                            <p style="margin-left: 5px;">Coursera Project Network</p>
                         </div>
-                        <h4 style="margin: 14px;">Google AI Essentials</h4>
+                        <h4 style="margin: 14px;"> AWS S3 Basics</h4>
                     </div>
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="course-detail" class="container " data-aos="zoom-in"data-aos-duration="800">
+            <a style="text-decoration: none; color: black;    width: 27%;" href="course-detail" class="container" data-aos="zoom-in"data-aos-duration="800">
                 <div class="course-card zoom-card">
-                    <img class="mg-15" src="images\Marketing-Image.png" alt="">
+                     <p class="text-free">Free</p>
+                    <img class="mg-15 "  src="images\courses\course_1-3.png" alt="">
                     <div class=" info">
                         <div class="own dp-flex-row">
-                            <img class="brand"   src="https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png" alt="">
-                            <p style="margin-left: 5px;">Google</p>
+                            <img class="brand"   src="images\courses\supplier_1.png" alt="">
+                            <p style="margin-left: 5px;">Coursera Project Network</p>
                         </div>
-                        <h4 style="margin: 14px;">Google AI Essentials</h4>
+                        <h4 style="margin: 14px;">Introduction to Basic Game Development using Scratch</h4>
                     </div>
                 </div>
             </a>
-            <a style="text-decoration: none; color: black;" href="course-detail" class="container " data-aos="zoom-in"data-aos-duration="800">
+            <a style="text-decoration: none; color: black;    width: 27%;" href="course-detail" class="container" data-aos="zoom-in"data-aos-duration="800">
                 <div class="course-card zoom-card">
-                    <img class="mg-15" src="images\Marketing-Image.png" alt="">
+                     <p class="text-free">Free</p>
+                    <img class="mg-15 "  src="images\courses\course_1-4.png" alt="">
                     <div class=" info">
                         <div class="own dp-flex-row">
-                            <img class="brand"   src="https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png" alt="">
-                            <p style="margin-left: 5px;">Google</p>
+                            <img class="brand"   src="images\courses\supplier_1.png" alt="">
+                            <p style="margin-left: 5px;">Coursera Project Network</p>
                         </div>
-                        <h4 style="margin: 14px;">Google AI Essentials</h4>
+                        <h4 style="margin: 14px;">Building a Business Presence With Facebook Marketing</h4>
                     </div>
                 </div>
             </a>

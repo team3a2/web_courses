@@ -33,10 +33,20 @@ main {
     margin: 10px;
 }
 #courses .course-card {
+    position: relative;
     border-radius: 11px;
     background-color: rgb(255, 255, 255);
     margin: 20px;
     border: 2px solid #E5E7E8
+}
+#courses .course-card .text-free {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    background-color: white;
+    padding: 3px 8px 3px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 #courses img {
     border-radius: 7px;
@@ -60,7 +70,7 @@ main {
 
 }
 .zoom-card:hover {
-    scale: 105%;
+    transform: scale(1.05);
     box-shadow: 0px 0px 9px 0px #0000002b;
     cursor: pointer;
 }
@@ -394,17 +404,17 @@ main {
     background-color: #00AF50
 }
 
-#mvc .container {
+#MVV .container {
     position: relative;
 
 }
-#mvc .img-container {
+#MVV .img-container {
     display: flex;
     justify-content: center;
 }
-#mvc .img-container img {
+#MVV .img-container img {
 }
-#mvc .card {
+#MVV .card {
     padding: 40px;
     width: var(--w-33);
     align-items: center;
