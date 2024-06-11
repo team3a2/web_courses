@@ -15,9 +15,12 @@
     --font-size-84: 84px;
     --mg-0-70-0-70: 0 70px 0 70px;
     --w-33: 33%;
-    --font-size-18:18px
+    --font-size-18:18px;
+    ---70px: 70px
 }
-
+.mg-l-70 {
+    margin-left: var(---70px);
+}
 body {
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
@@ -79,6 +82,9 @@ svg {
 .bd-r {
     border-right: 1px solid rgb(128, 128, 128);
 }
+.b-r-50pc {
+    border-radius: 50%;
+}
 .bd-b {
     border-bottom: 3px solid #0056D2;
 }
@@ -91,6 +97,9 @@ svg {
 }
 .pd-16 {
     padding:16px
+}
+.pd-10 {
+    padding:10px
 }
 .pd-t-b-16 {
     padding: 16px 0 16px 0;

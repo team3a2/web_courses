@@ -138,8 +138,9 @@ const sendBtn = document.querySelector('.chat-input button');
 const closeBtn = document.querySelector('.chat-container .close-btn');
 
 const data = {
-    "ổn chưa":"rồi ạ",
-    "bao nhiêu lâu thì bán được 1 tỷ gói mè":"trả lời"
+    "Hello": "Hi Quan! I'm the personalized-AI designed by Listudy for you! Give any requests like build your own curriculums or anything!",
+    "How can I rapidly observe a list courses I am concerned":"Method 1 is to use the command + F key combination then click on your keyword and press search, system will filter and return a list of results to you. In addition, you can send a request directly here to make it!",
+    "I use Macbook M1 Pro 2020": "Awesome!",
 };
 
 botIcon.addEventListener('click', () => {
@@ -175,7 +176,7 @@ function getResponse(userInput) {
             return data[question];
         }
     }
-    return "Xin lỗi, tôi không hiểu câu hỏi của bạn.";
+    return "Sorry, I don't understand your question.";
 }
 
 function addend_message_user(message) {
@@ -183,7 +184,8 @@ function addend_message_user(message) {
     messageContainer.classList.add('message-user', 'dp-flex-row');
 
     const img = document.createElement('img');
-    img.src = "images/user.png";
+    img.classList.add('b-r-50pc')
+    img.src = "images/user.jpg";
     img.alt = "Biểu tượng bot";
 
     const p = document.createElement('p');
@@ -199,6 +201,7 @@ function typeWriter(text, speed) {
     messageContainer.classList.add('message-bot', 'dp-flex-row');
 
     const img = document.createElement('img');
+    img.classList.add('b-r-50pc')
     img.src = "images/bot.png";
     img.alt = "Biểu tượng bot";
 
