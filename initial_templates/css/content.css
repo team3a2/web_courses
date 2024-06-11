@@ -37,7 +37,8 @@ main {
     border-radius: 11px;
     background-color: rgb(255, 255, 255);
     margin: 20px;
-    border: 2px solid #E5E7E8
+    border: 2px solid #E5E7E8;
+    overflow: hidden;
 }
 #courses .course-card .text-free {
     position: absolute;
@@ -50,6 +51,7 @@ main {
 }
 #courses img {
     border-radius: 7px;
+    width: -webkit-fill-available;
 
 }
 #courses .own {
